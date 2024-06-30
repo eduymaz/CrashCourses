@@ -1,6 +1,5 @@
----
-title: "R/RStudio Beginner Workshop"
----
+"R/RStudio Beginner Workshop"
+
 
 
 
