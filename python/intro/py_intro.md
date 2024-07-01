@@ -58,7 +58,7 @@ Do not forget to add python to the path ([you can add it manually as well](https
 The first program we will write is the classic "Hello, World!" program. This program will simply print "Hello, World!" to the screen.
 
 ```python
-print("Hello, BMGlab!")
+print("Hello, World!")
 ```
 # Basic Syntax
 - ### comments:
@@ -66,7 +66,7 @@ print("Hello, BMGlab!")
   
     We can create comments using `#` :
     ```python 
-    print("I love tantuni")#this is a comment. I love tantuni by the way
+    print("Hello world")#this is a comment.
 
 - ### print :
     - The `print` command is the easiest way to send a specified message to the screen or other display device.
