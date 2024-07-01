@@ -12,6 +12,7 @@ Welcome to the Beginner Python Course! This course will introduce you to the bas
 - [Basic Syntax](#basic-syntax)
 - [Variables and Data Types](#variables-and-data-types)
 - [Arithmetic And Operations](#arithmetic-and-operations)
+- [Iterable Data Structures](#iterable-data-structures)
   
 # Introduction
 
@@ -111,6 +112,14 @@ print("Hello, BMGlab!")
     multiline_string2 = """This is also a
     multiline string."""
     ```
+    Special Characters: 
+    ```python
+    print('One \nTwo \nThree')# use \n to create a new line
+    print("\t hey \t there") #we can create a tab using \t: 
+    ```
+
+
+
     Python has a convenient way to embed expressions inside string literals, using {}. This is called an f-string (formatted string literal).
     ```python
     name = "Efe"
@@ -177,7 +186,7 @@ print("Hello, BMGlab!")
         PI = 3.14159
         MAX_VALUE = 100
         ```
-- ## Data Type Convertion:
+- ## Data Type Conversion:
   - `str()` for strings:
     ```python
         num = 42
@@ -367,6 +376,336 @@ print("Hello, BMGlab!")
       result = 1 and 0  # False
       result = 1 and '1'#True
       ``` 
+
+# Iterable Data Structures
+  - ## Lists: Lists are one of the most commonly used data structures in Python. They are ordered, mutable (changeable), and can contain elements of different types.
+    - Creating Lists: You can create a list by placing comma-separated values inside square brackets.
+    ```python
+    # Creating a list
+    fruits = ["apple", "banana", "cherry"]
+    numbers = [1, 2, 3, 4, 5]
+    mixed = [1, "apple", 3.14, True]
+    zeros = [0] * 5 # [0,0,0,0,0]
+
+    # Empty list
+    empty_list = []
+    ``` 
+    - Accessing Elements: You can access elements in a list using their index, with the first element having an index of 0.
+    ```python
+    fruits = ["apple", "banana", "cherry"]
+
+    # Accessing elements
+    first_fruit = fruits[0]  # "apple"
+    second_fruit = fruits[1]  # "banana"
+
+    # Negative indexing
+    last_fruit = fruits[-1]  # "cherry"
+    second_last_fruit = fruits[-2]  # "banana"
+    ``` 
+    - Slicing Lists: You can extract a part of a list (a slice) using the colon (:) operator.
+    ```python
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    # Slicing
+    first_five = numbers[:5]  # [0, 1, 2, 3, 4]
+    middle = numbers[3:7]  # [3, 4, 5, 6]
+    last_three = numbers[-3:]  # [7, 8, 9]
+    ``` 
+    - Modifying Lists: You can modify elements in a list by assigning new values to specific indexes.
+    ```python
+    fruits = ["apple", "banana", "cherry"]
+
+    # Modifying elements
+    fruits[1] = "blueberry"
+    print(fruits)  # ["apple", "blueberry", "cherry"]
+
+    # Adding elements
+    fruits.append("date")
+    print(fruits)  # ["apple", "blueberry", "cherry", "date"]
+
+    # Inserting elements
+    fruits.insert(1, "banana")
+    print(fruits)  # ["apple", "banana", "blueberry", "cherry", "date"]
+
+    # Removing elements
+    fruits.remove("blueberry")
+    print(fruits)  # ["apple", "banana", "cherry", "date"]
+
+    # Removing element by index
+    del fruits[2]
+    print(fruits)  # ["apple", "banana", "date"]
+
+    # Popping elements
+    last_fruit = fruits.pop()
+    print(fruits)  # ["apple", "banana"]
+    print(last_fruit)  # "date"
+    ``` 
+    - List Operations: You can perform various operations on lists, such as concatenation, repetition, and checking for membership.
+    ```python
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+
+    # Concatenation
+    combined = list1 + list2  # [1, 2, 3, 4, 5, 6]
+
+    # Repetition
+    repeated = list1 * 2  # [1, 2, 3, 1, 2, 3]
+
+    # Membership
+    is_in_list = 2 in list1  # True
+    is_not_in_list = 7 not in list1  # True
+    ``` 
+  - ## Tuples: Tuples are another essential data structure in Python. Unlike lists, tuples are immutable, meaning their elements cannot be changed after they are created.
+    - Creating Tuples: You can create a tuple by placing comma-separated values inside parentheses.
+    ```python
+    # Creating a tuple
+    fruits = ("apple", "banana", "cherry")
+    numbers = (1, 2, 3, 4, 5)
+    mixed = (1, "apple", 3.14, True)
+
+    # Empty tuple
+    empty_tuple = ()
+    single_element_tuple = (1,) 
+    ``` 
+    - concatenation, repetition, slicing, accessing elements: Done exactly the same way with lists.
+    ```python
+    # Concatenation
+    tuple1 = (1, 2, 3)
+    tuple2 = (4, 5, 6)
+    combined = tuple1 + tuple2  # (1, 2, 3, 4, 5, 6)
+
+    # Repetition
+    repeated = tuple1 * 2  # (1, 2, 3, 1, 2, 3)
+    numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+    # Slicing
+    first_five = numbers[:5]  # (0, 1, 2, 3, 4)
+    middle = numbers[3:7]  # (3, 4, 5, 6)
+    last_three = numbers[-3:]  # (7, 8, 9)
+    fruits = ("apple", "banana", "cherry")
+
+    # Accessing elements
+    first_fruit = fruits[0]  # "apple"
+    second_fruit = fruits[1]  # "banana"
+
+    # Negative indexing
+    last_fruit = fruits[-1]  # "cherry"
+    second_last_fruit = fruits[-2]  # "banana"
+
+    ``` 
+    - Unpacking Tuples: You can unpack the elements of a tuple into variables.
+    ```python
+    fruits = ("apple", "banana", "cherry")
+
+    # Unpacking
+    first_fruit, second_fruit, third_fruit = fruits
+    print(first_fruit)  # "apple"
+    print(second_fruit)  # "banana"
+    print(third_fruit)  # "cherry"
+
+    ``` 
+  - ## Sets: Sets are another important data structure in Python. They are unordered collections of unique elements, meaning they do not allow duplicate values.
+    - Creating Sets: You can create a set by placing comma-separated values inside curly braces or by using the set() function.
+    ```python
+    # Creating a set
+    fruits = {"apple", "banana", "cherry"}
+    numbers = {1, 2, 3, 4, 5}
+    mixed = {1, "apple", 3.14, True}
+
+    # Empty set
+    empty_set = set()
+
+    # Note: Using {} creates an empty dictionary, not an empty set
+    empty_dict = {}
+    ``` 
+    - Adding and Removing Elements: You can add elements to a set using the add() method and remove elements using the remove() or discard() methods.
+    ```python
+    fruits = {"apple", "banana", "cherry"}
+
+    # Adding elements
+    fruits.add("date")
+    print(fruits)  # {"apple", "banana", "cherry", "date"}
+
+    # Removing elements
+    fruits.remove("banana")
+    print(fruits)  # {"apple", "cherry", "date"}
+
+    # Removing elements using discard (no error if the element does not exist)
+    fruits.discard("banana")  # No error
+    print(fruits)  # {"apple", "cherry", "date"}
+
+    # Popping an element (removes and returns an arbitrary element)
+    popped_element = fruits.pop()
+    print(popped_element)  # An arbitrary element from the set
+    print(fruits)  # Set with the remaining elements
+
+    # Clearing the set
+    fruits.clear()
+    print(fruits)  # set()
+    ``` 
+    - Set Operations: Python sets support mathematical set operations such as union, intersection, difference, and symmetric difference.
+    ```python
+    set1 = {1, 2, 3, 4}
+    set2 = {3, 4, 5, 6}
+
+    # Union (elements in either set)
+    union_set = set1.union(set2)  # {1, 2, 3, 4, 5, 6}
+    # Alternatively
+    union_set = set1 | set2  # {1, 2, 3, 4, 5, 6}
+
+    # Intersection (elements in both sets)
+    intersection_set = set1.intersection(set2)  # {3, 4}
+    # Alternatively
+    intersection_set = set1 & set2  # {3, 4}
+
+    # Difference (elements in set1 but not in set2)
+    difference_set = set1.difference(set2)  # {1, 2}
+    # Alternatively
+    difference_set = set1 - set2  # {1, 2}
+
+    # Symmetric Difference (elements in either set but not in both)
+    symmetric_difference_set = set1.symmetric_difference(set2)  # {1, 2, 5, 6}
+    # Alternatively
+    symmetric_difference_set = set1 ^ set2  # {1, 2, 5, 6}
+    ```
+  - ## Dictionaries: Dictionaries are another essential data structure in Python. They are unordered collections of key-value pairs, where each key is unique. 
+    - Creating Dictionaries: You can create a dictionary by placing comma-separated key-value pairs inside curly braces, or by using the dict() function.
+    ```python
+    # Creating a dictionary
+    fruits = {"apple": 1, "banana": 2, "cherry": 3}
+    numbers = {1: "one", 2: "two", 3: "three"}
+    mixed = {"name": "Alice", "age": 30, "is_student": True}
+
+    # Empty dictionary
+    empty_dict = {}
+
+    # Using the dict() function
+    another_dict = dict(name="Bob", age=25, is_student=False)
+    ``` 
+    - Accessing Elements: You can access elements in a dictionary by using their keys.
+    ```python
+    fruits = {"apple": 1, "banana": 2, "cherry": 3}
+
+    # Accessing elements
+    apple_count = fruits["apple"]  # 1
+    banana_count = fruits["banana"]  # 2
+
+    # Accessing non-existing key will raise a KeyError
+    # mango_count = fruits["mango"]  # KeyError: 'mango'
+    ``` 
+    - Adding and Modifying Elements: You can add new key-value pairs or modify existing ones by assigning values to keys.
+    ```python
+    fruits = {"apple": 1, "banana": 2, "cherry": 3}
+
+    # Adding a new key-value pair
+    fruits["date"] = 4
+    print(fruits)  # {"apple": 1, "banana": 2, "cherry": 3, "date": 4}
+
+    # Modifying an existing key-value pair
+    fruits["apple"] = 5
+    print(fruits)  # {"apple": 5, "banana": 2, "cherry": 3, "date": 4}
+
+    ``` 
+    - Removing Elements: You can remove key-value pairs using the del statement or the pop() method.
+    ```python
+    fruits = {"apple": 1, "banana": 2, "cherry": 3, "date": 4}
+
+    # Removing a key-value pair using del
+    del fruits["banana"]
+    print(fruits)  # {"apple": 1, "cherry": 3, "date": 4}
+
+    # Removing a key-value pair using pop
+    cherry_count = fruits.pop("cherry")
+    print(fruits)  # {"apple": 1, "date": 4}
+    print(cherry_count)  # 3
+
+    # Removing all elements
+    fruits.clear()
+    print(fruits)  # {}
+
+    ``` 
+  - ## Type conversion 
+    - `List()` for lists , `tuple()` for tuples , `set()` for sets and `dict()` for dictionaries. 
+    ```python
+        # List to tuple
+    my_list = [1, 2, 3, 4]
+    my_tuple = tuple(my_list)
+    print(my_tuple)  # (1, 2, 3, 4)
+
+        # Tuple to list
+    my_tuple = (1, 2, 3, 4)
+    my_list = list(my_tuple)
+    print(my_list)  # [1, 2, 3, 4]
+
+        # List to set
+    my_list = [1, 2, 2, 3, 4, 4]
+    my_set = set(my_list)
+    print(my_set)  # {1, 2, 3, 4}
+
+        # List of tuples to dictionary
+    my_list = [("apple", 1), ("banana", 2), ("cherry", 3)]
+    my_dict = dict(my_list)
+    print(my_dict)  # {"apple": 1, "banana": 2, "cherry": 3}
+
+    # List of lists to dictionary
+    my_list = [["apple", 1], ["banana", 2], ["cherry", 3]]
+    my_dict = dict(my_list)
+    print(my_dict)  # {"apple": 1, "banana": 2, "cherry": 3}
+    my_dict = {"apple": 1, "banana": 2, "cherry": 3}
+
+    # Dictionary keys to list
+    keys_list = list(my_dict.keys())
+    print(keys_list)  # ["apple", "banana", "cherry"]
+
+    # Dictionary values to list
+    values_list = list(my_dict.values())
+    print(values_list)  # [1, 2, 3]
+
+    # Dictionary items to list of tuples
+    items_list = list(my_dict.items())
+    print(items_list)  # [("apple", 1), ("banana", 2), ("cherry", 3)]
+    ``` 
+
+
+
+
+
+
+
+
+
+
+
+ 
+   
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
      
   
 
