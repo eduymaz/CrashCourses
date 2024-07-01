@@ -388,7 +388,7 @@ Terminal RScript
 
 ```{r}
 
-nano r_wprkshop.R
+nano r_workshop.R
 
 ```
 
@@ -439,7 +439,7 @@ print(max_score_row)
 
 ```{r}
 
-RScript r_wprkshop.R
+RScript r_workshop.R
 
 ```
 
