@@ -64,12 +64,12 @@ print("Hello, BMGlab!")
 - ### comments:
   - Comments are used to annotate code with explanations or notes. They are ignored by the Python interpreter and are purely for human readers.
   
-    We can create comments using # :
+    We can create comments using `#` :
     ```python 
     print("I love tantuni")#this is a comment. I love tantuni by the way
 
 - ### print :
-    - The print command is the easiest way to send a specified message to the screen or other display device.
+    - The `print` command is the easiest way to send a specified message to the screen or other display device.
     This message or output can be a number, text, or the result of a calculation.
 
       ```python
@@ -86,7 +86,7 @@ print("Hello, BMGlab!")
       print("hello')
       ```
 - ### input:
-   - In Python, the input() function is used to accept user input from the keyboard 
+   - In Python, the `input()` function is used to accept user input from the keyboard 
         ```python
         # Converting input to integer
         age_str = input("Enter your age: ")
@@ -122,7 +122,7 @@ print("Hello, BMGlab!")
 
 
 
-    Python has a convenient way to embed expressions inside string literals, using {}. This is called an f-string (formatted string literal).
+    Python has a convenient way to embed expressions inside string literals, using `{}`. This is called an f-string (formatted string literal).
     ```python
     name = "Efe"
     age = 30
@@ -130,7 +130,7 @@ print("Hello, BMGlab!")
     print(info)  # "My name is Alice and I am 30 years old."
 
     ```
-  - ### Int : In Python, integers are whole numbers without any decimal point. They can be positive or negative.'
+  - ### Integer : In Python, integers are whole numbers without any decimal point. They can be positive or negative.
     ```python
     my_number1 = 42
 
@@ -142,13 +142,13 @@ print("Hello, BMGlab!")
      my_float2 = -0.5
      sci_float = 6.022e23  # 6.022 × 10^23
      ```
-    - ### Boolean : Booleans are a data type that represents truth values. There are two boolean values: True and False. Booleans are used primarily for logical operations, comparisons, and flow control in programs.
+    - ### Boolean : Booleans are a data type that represents truth values. There are two boolean values: `True` and `False`. Booleans are used primarily for logical operations, comparisons, and flow control in programs.
       ```python
       is_active = True
       is_admin = False
       ```
 - ## Declaration And Variables :
-  - ### Variables : In Python, variables are used to store data values. They are assigned using the = operator. Here's how variables work:
+  - ### Variables : In Python, variables are used to store data values. They are assigned using the `=` operator. Here's how variables work:
     - Variable Declaration
         ```python
         # Assigning integer values to variables
@@ -170,7 +170,7 @@ print("Hello, BMGlab!")
     - Variable Naming Rulse:
       - 1 - Variable names in Python can contain letters (both uppercase and lowercase), digits, and underscores (_).
       - 2 - Variable names cannot start with a digit.
-      - 3 - Python keywords (like if, else, for, while, etc.) cannot be used as variable names.
+      - 3 - Python keywords (like `if, else, for, while`, etc.) cannot be used as variable names.
       - 4 - Variable names are case-sensitive (age and Age are different variables).
   
   
@@ -215,7 +215,7 @@ print("Hello, BMGlab!")
         is_active_int = int(is_active)  # 1
 
     ```
-    - `float()` for floats:
+  - `float()` for floats:
     ```python
         num = 42
         num_str = str(num)  # Converts integer 42 to string '42'
@@ -226,10 +226,10 @@ print("Hello, BMGlab!")
         is_active = True
         is_active_str = str(is_active)  # Converts boolean True to string 'True'
     ```
-    - `bool()` for boolean:
-      - Integers and floats: Converts 0 to False and non-zero values to True.
-      - Strings: Converts an empty string '' to False and non-empty strings to True.
-      - None: Converts None to False.
+  - `bool()` for boolean:
+      - Integers and floats: Converts `0` to `False` and non-zero values to `True`.
+      - Strings: Converts an empty string `''` to `False` and non-empty strings to `True`.
+      - None: Converts None to `False`.
     ```python
         # Converting from integer to boolean
         num_int = 0
@@ -246,7 +246,7 @@ print("Hello, BMGlab!")
     ```
   # Arithmetic And Operations
   - ## Basic Arithmetic Operators
-    - 1. Addition (+)
+    - 1. Addition (`+`)
        - Adds two numbers.
        - Can also concatenate strings.
        ```python
@@ -255,12 +255,12 @@ print("Hello, BMGlab!")
         # Strings
         result = "Hello, " + "world!"  # "Hello, world!"
        ``` 
-    - 2. Subtraction (-)
+    - 2. Subtraction (`-`)
        - Subtracts the second number from the first. 
        ```python
        result = 5 - 3  # 2
        ``` 
-    - 3. Multiplication (*)
+    - 3. Multiplication (`*`)
         - Multiplies two numbers.
         - Repeats a string a specified number of times.
         ```python
@@ -271,28 +271,28 @@ print("Hello, BMGlab!")
         result = "Hello! " * 3  # "Hello! Hello! Hello! "
 
         ``` 
-    - 4. Division (/)
+    - 4. Division (`/`)
       - Divides the first number by the second, resulting in a float.
       ```python
       result = 5 / 2  # 2.5
       ``` 
-    - 5. Floor Division (//)
+    - 5. Floor Division (`//`)
       - Divides the first number by the second, rounding down to the nearest integer.
       ```python
       result = 5 // 2  # 2
       ``` 
-    - 6. Modulus (%)
+    - 6. Modulus (`%`)
       - Returns the remainder of the division of the first number by the second.
       ```python
       result = 5 % 2  # 1
       ``` 
-    - 7. Exponentiation (**)
+    - 7. Exponentiation (`**`)
       - Raises the first number to the power of the second.
       ```python
       result = 2 ** 3  # 8
       ``` 
     - 8. Arithmetic Boolean Operators
-      - Booleans can be used in arithmetic operations, where True is treated as 1 and False as 0.
+      - Booleans can be used in arithmetic operations, where `True` is treated as `1` and `False` as `0`.
       ```python
       # Addition
       result = True + False  # 1 (1 + 0)
@@ -312,8 +312,8 @@ print("Hello, BMGlab!")
         result = 5 // 2.0  # 2.0 (result is float because one operand is float)
         ``` 
   - ## Logical Operations
-    - 1. AND (and)
-      - The and operator returns True if both operands are True, otherwise it returns False.
+    - 1. AND (`and`)
+      - The `and` operator returns `True` if both operands are `True`, otherwise it returns `False`.
       ```python
       # Both operands are True
       result = True and True  # True
@@ -321,8 +321,8 @@ print("Hello, BMGlab!")
       # One operand is False
       result = True and False  # False
       ``` 
-    - 2. OR (or)
-      - The or operator returns True if at least one operand is True, otherwise it returns False.
+    - 2. OR (`or`)
+      - The `or` operator returns `True` if at least one operand is `True`, otherwise it returns `False`.
       ```python
       # Both operands are False
       result = False and False  # False
@@ -330,8 +330,8 @@ print("Hello, BMGlab!")
       # One operand is True
       result = True or False  # True
       ``` 
-    - 3. NOT (not)
-      - The not operator returns the opposite boolean value of its operand.
+    - 3. NOT (`not`)
+      - The `not` operator returns the opposite boolean value of its operand.
       ```python
       # Operand is True
       result = not True  # False
@@ -339,14 +339,14 @@ print("Hello, BMGlab!")
       # Operand is False
       result = not False  # True
       ``` 
-    - 4. Equal to (==)
+    - 4. Equal to (`==`)
       - Checks if two values are equal.
       ```python
       result = 5 == 5  # True
       result = 5 == 3  # False
       result = "apple" == "apple"  # True
       ``` 
-    - 5. Not equal to (!=)
+    - 5. Not equal to (`!=`)
       - Checks if two values are not equal.
       ```python
       result = 5 != 3  # True
@@ -354,7 +354,7 @@ print("Hello, BMGlab!")
       result = "apple" != "Apple"  # True (case-sensitive)
 
       ``` 
-    - 6. Greater/Less than (> , < ,<= , >=)
+    - 6. Greater/Less than (`>` , `<` ,`<=` , `>=`)
       - Compares the two values.
       ```python
       result = 5 > 3  # True
@@ -370,9 +370,9 @@ print("Hello, BMGlab!")
       b = 20
       result = a < b <= 20  # True (equivalent to (a < b) and (b <= 20))
       ```  
-    - ### Truthy and Falsy Values: n Python, certain values are considered "truthy" (evaluated as True) and others are "falsy" (evaluated as False). Here's a summary:
+    - ### Truthy and Falsy Values: n Python, certain values are considered "truthy" (evaluated as `True`) and others are "falsy" (evaluated as `False`). Here's a summary:
 
-      - Falsy values: None, False, 0 (numeric zero), 0.0 (float zero), '' (empty string), [] (empty list), () (empty tuple), {} (empty - dictionary), set() (empty set).
+      - Falsy values: `None`, `False`, `0` (numeric zero), `0.0` (float zero), `''` (empty string), `[]` (empty list), `()` (empty tuple), `{}` (empty - dictionary), `set()` (empty set).
       - Truthy values: Any value that is not falsy.
       ```python
       result = 1 and 0  # False
@@ -392,7 +392,7 @@ print("Hello, BMGlab!")
     # Empty list
     empty_list = []
     ``` 
-    - Accessing Elements: You can access elements in a list using their index, with the first element having an index of 0.
+    - Accessing Elements: You can access elements in a list using their index, with the first element having an index of `0`.
     ```python
     fruits = ["apple", "banana", "cherry"]
 
@@ -404,7 +404,7 @@ print("Hello, BMGlab!")
     last_fruit = fruits[-1]  # "cherry"
     second_last_fruit = fruits[-2]  # "banana"
     ``` 
-    - Slicing Lists: You can extract a part of a list (a slice) using the colon (:) operator.
+    - Slicing Lists: You can extract a part of a list (a slice) using the colon `:` operator.
     ```python
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -508,7 +508,7 @@ print("Hello, BMGlab!")
 
     ``` 
   - ## Sets: Sets are another important data structure in Python. They are unordered collections of unique elements, meaning they do not allow duplicate values.
-    - Creating Sets: You can create a set by placing comma-separated values inside curly braces or by using the set() function.
+    - Creating Sets: You can create a set by placing comma-separated values inside curly braces or by using the `set()` function.
     ```python
     # Creating a set
     fruits = {"apple", "banana", "cherry"}
@@ -521,7 +521,7 @@ print("Hello, BMGlab!")
     # Note: Using {} creates an empty dictionary, not an empty set
     empty_dict = {}
     ``` 
-    - Adding and Removing Elements: You can add elements to a set using the add() method and remove elements using the remove() or discard() methods.
+    - Adding and Removing Elements: You can add elements to a set using the `add()` method and remove elements using the `remove()` or `discard()` methods.
     ```python
     fruits = {"apple", "banana", "cherry"}
 
@@ -572,7 +572,7 @@ print("Hello, BMGlab!")
     symmetric_difference_set = set1 ^ set2  # {1, 2, 5, 6}
     ```
   - ## Dictionaries: Dictionaries are another essential data structure in Python. They are unordered collections of key-value pairs, where each key is unique. 
-    - Creating Dictionaries: You can create a dictionary by placing comma-separated key-value pairs inside curly braces, or by using the dict() function.
+    - Creating Dictionaries: You can create a dictionary by placing comma-separated key-value pairs inside curly braces, or by using the `dict()` function.
     ```python
     # Creating a dictionary
     fruits = {"apple": 1, "banana": 2, "cherry": 3}
@@ -609,7 +609,7 @@ print("Hello, BMGlab!")
     print(fruits)  # {"apple": 5, "banana": 2, "cherry": 3, "date": 4}
 
     ``` 
-    - Removing Elements: You can remove key-value pairs using the del statement or the pop() method.
+    - Removing Elements: You can remove key-value pairs using the `del` statement or the `pop()` method.
     ```python
     fruits = {"apple": 1, "banana": 2, "cherry": 3, "date": 4}
 
@@ -671,14 +671,14 @@ print("Hello, BMGlab!")
 
 # Conditional Statements
   - ### if statements in Python are used to execute a block of code only if a certain condition is met.
-  - Basic `if` Statement: An if statement evaluates a condition (which is an expression that returns True or False) and executes the indented block of code if the condition is True.
+  - Basic `if` Statement: An `if` statement evaluates a condition (which is an expression that returns `True` or `False`) and executes the indented block of code if the condition is `True`.
   ```python
   # Basic if statement
   x = 10
   if x > 5:
     print("x is greater than 5")  # This will be printed because 10 > 5
   ``` 
-  - `if-else` Statement: You can use an else block to execute code when the if condition is False.
+  - `if-else` Statement: You can use an `else` block to execute code when the `if` condition is `False`.
   ```python
   # if-else statement
   x = 3
@@ -687,7 +687,7 @@ print("Hello, BMGlab!")
   else:
       print("x is not greater than 5")  # This will be printed because 3 is not greater than 5
   ``` 
-  - `if-elif-else` Statement: You can use multiple conditions with elif (short for "else if") to check additional conditions if the previous ones are False.
+  - `if-elif-else` Statement: You can use multiple conditions with `elif` (short for "`else if`") to check additional conditions if the previous ones are `False`.
   ```python
   # if-elif-else statement
   x = 5
@@ -711,7 +711,7 @@ print("Hello, BMGlab!")
   else:
       print("x is not greater than 5")
   ``` 
-  - Using Logical Operators in if Statements: You can use logical operators (and, or, not) to combine multiple conditions.
+  - Using Logical Operators in if Statements: You can use logical operators (`and`, `or`, `not`) to combine multiple conditions.
   ```python
   # Using and operator
   x = 10
@@ -775,7 +775,7 @@ for i in range(1, 10, 2):
     print(i)  # Prints 1, 3, 5, 7, 9
 
 ```
-- ### while Loops: A while loop executes a block of code as long as a specified condition is True.
+- ### while Loops: A while loop executes a block of code as long as a specified condition is `True`.
 ```python
 # Basic while loop
 i = 0
@@ -783,8 +783,8 @@ while i < 5:
     print(i)
     i += 1  # Increment the counter to avoid an infinite loop
 ```
-- ### Note : Be cautious with while loops to avoid infinite loops. Ensure there's a condition that will eventually become False.
-- ### `break` and continue `Statements`: You can use break to exit a loop and continue to skip the rest of the current iteration and continue with the next iteration.
+- ### Note : Be cautious with while loops to avoid infinite loops. Ensure there's a condition that will eventually become `False`.
+- ### `break` and `continue` Statements: You can use `break` to exit a loop and `continue` to skip the rest of the current iteration and continue with the next iteration.
 ```python
 # Using break to exit a loop
 for i in range(10):
@@ -798,7 +798,7 @@ for i in range(10):
         continue
     print(i)  # Prints 0, 1, 2, 3, 4, 6, 7, 8, 9
 ``` 
-- ### `else` Clause with Loops: An `else` clause can be used with loops. The else block executes after the loop finishes, unless the loop is terminated with a break statement.
+- ### `else` Clause with Loops: An `else` clause can be used with loops. The else block executes after the loop finishes, unless the loop is terminated with a `break` statement.
 ```python
 # for-else example
 for i in range(5):
@@ -829,7 +829,7 @@ while i < 3:
         print(f"i: {i}, j: {j}")
         j += 1
     i += 1
-    
+
 ```
 
 
