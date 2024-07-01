@@ -384,9 +384,64 @@ mtcars[index,]
 ```
 
 
+Terminal RScript
+
+```{r}
+
+nano r_wprkshop.R
+
+```
+
+```{r}
+
+df <- data.frame(
+  Name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+  Age = c(25, 30, 35, 40, 22),
+  Height = c(5.5, 6.0, 5.8, 5.9, 5.7),
+  Score = c(85, 90, 88, 75, 92)
+)
+
+#1. Print the original data frame
+print("Original Data Frame:")
+print(df)
+
+# 2. Sort Data Frame by Age in Decreasing Order
+sorted_by_age <- df[order(df$Age, decreasing = TRUE), ]
+print("Data Frame Sorted by Age (Decreasing):")
+print(sorted_by_age)
+
+# 3. Sort Data Frame by Score in Increasing Order
+sorted_by_score <- df[order(df$Score), ]
+print("Data Frame Sorted by Score (Increasing):")
+print(sorted_by_score)
+
+# 4. Filter Data Frame to Include Only Rows with Age > 30
+filtered_df <- df[df$Age > 30, ]
+print("Filtered Data Frame (Age > 30):")
+print(filtered_df)
+
+# 5. Add a New Column with a Calculated Value
+df$Height_in_cm <- df$Height * 100
+print("Data Frame with New Column (Height in cm):")
+print(df)
+
+# 6. Calculate the Mean Score
+mean_score <- mean(df$Score)
+print(paste("Mean Score:", mean_score))
+
+# 7. Find the Row with the Maximum Score
+max_score_row <- df[which.max(df$Score), ]
+print("Row with Maximum Score:")
+print(max_score_row)
+
+```
 
 
+```{r}
 
+RScript r_wprkshop.R
+
+```
 
 
 
