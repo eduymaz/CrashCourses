@@ -11,6 +11,7 @@ Welcome to the Beginner Python Course! This course will introduce you to the bas
 - [Hello, World!](#hello-world)
 - [Basic Syntax](#basic-syntax)
 - [Variables and Data Types](#variables-and-data-types)
+- [Arithmetic And Operations](#arithmetic-and-operations)
   
 # Introduction
 
@@ -112,7 +113,7 @@ print("Hello, BMGlab!")
     ```
     Python has a convenient way to embed expressions inside string literals, using {}. This is called an f-string (formatted string literal).
     ```python
-    name = "Alice"
+    name = "Efe"
     age = 30
     info = f"My name is {name} and I am {age} years old."
     print(info)  # "My name is Alice and I am 30 years old."
@@ -232,7 +233,182 @@ print("Hello, BMGlab!")
         is_valid = bool(num_float)  # True (non-zero float is True)
 
     ```
-- # Arithmetic And Operations
+  # Arithmetic And Operations
+  - ## Basic Arithmetic Operators
+    - 1. Addition (+)
+       - Adds two numbers.
+       - Can also concatenate strings.
+       ```python
+       # Numbers
+        result = 5 + 3  # 8
+        # Strings
+        result = "Hello, " + "world!"  # "Hello, world!"
+       ``` 
+    - 2. Subtraction (-)
+       - Subtracts the second number from the first. 
+       ```python
+       result = 5 - 3  # 2
+       ``` 
+    - 3. Multiplication (*)
+        - Multiplies two numbers.
+        - Repeats a string a specified number of times.
+        ```python
+        # Numbers
+        result = 5 * 3  # 15
+
+        # Strings
+        result = "Hello! " * 3  # "Hello! Hello! Hello! "
+
+        ``` 
+    - 4. Division (/)
+      - Divides the first number by the second, resulting in a float.
+      ```python
+      result = 5 / 2  # 2.5
+      ``` 
+    - 5. Floor Division (//)
+      - Divides the first number by the second, rounding down to the nearest integer.
+      ```python
+      result = 5 // 2  # 2
+      ``` 
+    - 6. Modulus (%)
+      - Returns the remainder of the division of the first number by the second.
+      ```python
+      result = 5 % 2  # 1
+      ``` 
+    - 7. Exponentiation (**)
+      - Raises the first number to the power of the second.
+      ```python
+      result = 2 ** 3  # 8
+      ``` 
+    - 8. Arithmetic Boolean Operators
+      - Booleans can be used in arithmetic operations, where True is treated as 1 and False as 0.
+      ```python
+      # Addition
+      result = True + False  # 1 (1 + 0)
+
+      # Subtraction
+      result = True - False  # 1 (1 - 0)
+
+      # Multiplication
+      result = True * False  # 0 (1 * 0)
+
+      # Division
+      result = True / True  # 1.0 (1 / 1)
+      ``` 
+      ### Note:
+    - Arithmetic operations between integers and floats follow the rules of arithmetic. When combining an integer and a float, the result is a float.
+        ```python
+        result = 5 // 2.0  # 2.0 (result is float because one operand is float)
+        ``` 
+  - ## Logical Operations
+    - 1. AND (and)
+      - The and operator returns True if both operands are True, otherwise it returns False.
+      ```python
+      # Both operands are True
+      result = True and True  # True
+
+      # One operand is False
+      result = True and False  # False
+      ``` 
+    - 2. OR (or)
+      - The or operator returns True if at least one operand is True, otherwise it returns False.
+      ```python
+      # Both operands are False
+      result = False and False  # False
+
+      # One operand is True
+      result = True or False  # True
+      ``` 
+    - 3. NOT (not)
+      - The not operator returns the opposite boolean value of its operand.
+      ```python
+      # Operand is True
+      result = not True  # False
+
+      # Operand is False
+      result = not False  # True
+      ``` 
+    - 4. Equal to (==)
+      - Checks if two values are equal.
+      ```python
+      result = 5 == 5  # True
+      result = 5 == 3  # False
+      result = "apple" == "apple"  # True
+      ``` 
+    - 5. Not equal to (!=)
+      - Checks if two values are not equal.
+      ```python
+      result = 5 != 3  # True
+      result = 5 != 5  # False
+      result = "apple" != "Apple"  # True (case-sensitive)
+
+      ``` 
+    - 6. Greater/Less than (> , < ,<= , >=)
+      - Compares the two values.
+      ```python
+      result = 5 > 3  # True
+      result = 3 > 5  # False
+      result = 3 < 5  # True
+      result = 5 < 3  # False
+      result = 5 <= 5 # True
+      result = 5 >= 6 # False
+      result = "apple" < "banana"  # True (based on Unicode values)
+      a = 5
+      result = 1 < a < 10  # True (equivalent to (1 < a) and (a < 10))
+
+      b = 20
+      result = a < b <= 20  # True (equivalent to (a < b) and (b <= 20))
+      ```  
+    - ### Truthy and Falsy Values: n Python, certain values are considered "truthy" (evaluated as True) and others are "falsy" (evaluated as False). Here's a summary:
+
+      - Falsy values: None, False, 0 (numeric zero), 0.0 (float zero), '' (empty string), [] (empty list), () (empty tuple), {} (empty - dictionary), set() (empty set).
+      - Truthy values: Any value that is not falsy.
+      ```python
+      result = 1 and 0  # False
+      result = 1 and '1'#True
+      ``` 
+     
+  
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+ 
+   
+ 
+
+
+ 
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
 
 
   
