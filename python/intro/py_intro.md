@@ -67,7 +67,7 @@ print("Hello, World!")
     We can create comments using `#` :
     ```python 
     print("Hello world")#this is a comment.
-
+    ```
 - ### print :
     - The `print` command is the easiest way to send a specified message to the screen or other display device.
     This message or output can be a number, text, or the result of a calculation.
@@ -153,20 +153,20 @@ print("Hello, World!")
     - Variable Declaration
         ```python
         # Assigning integer values to variables
-            age = 25
-            year = 2024
+        age = 25
+        year = 2024
 
-            # Assigning float values to variables
-            pi = 3.14
-            temperature = -10.5
+        # Assigning float values to variables
+        pi = 3.14
+        temperature = -10.5
 
-            # Assigning string values to variables
-            name = "Alice"
-            message = 'Hello, World!'
+        # Assigning string values to variables
+        name = "Alice"
+        message = 'Hello, World!'
 
-            # Assigning boolean values to variables
-            is_active = True
-            is_admin = False
+        # Assigning boolean values to variables
+        is_active = True
+        is_admin = False
         ```
     - Variable Naming Rulse:
       - 1 - Variable names in Python can contain letters (both uppercase and lowercase), digits, and underscores (_).
@@ -192,28 +192,28 @@ print("Hello, World!")
 - ## Data Type Conversion:
   - `str()` for strings:
     ```python
-        num = 42
-        num_str = str(num)  # Converts integer 42 to string '42'
+    num = 42
+    num_str = str(num)  # Converts integer 42 to string '42'
 
-        pi = 3.14
-        pi_str = str(pi)  # Converts float 3.14 to string '3.14'
+    pi = 3.14
+    pi_str = str(pi)  # Converts float 3.14 to string '3.14'
 
-        is_active = True
-        is_active_str = str(is_active)  # Converts boolean True to string 'True'
+    is_active = True
+    is_active_str = str(is_active)  # Converts boolean True to string 'True'
     ```
   - `int()` for integers:
     ```python
-        # Converting from float to int
-        num_float = 3.14
-        num_int = int(num_float)  # 3
+    # Converting from float to int
+    num_float = 3.14
+    num_int = int(num_float)  # 3
 
-        # Converting from string to int
-        num_str = "42"
-        num_int = int(num_str)  # 42
+    # Converting from string to int
+    num_str = "42"
+    num_int = int(num_str)  # 42
 
-        # Converting boolean to int
-        is_active = True
-        is_active_int = int(is_active)  # 1
+    # Converting boolean to int
+    is_active = True
+    is_active_int = int(is_active)  # 1
 
     ```
   - `float()` for floats:
@@ -230,19 +230,19 @@ print("Hello, World!")
   - `bool()` for boolean:
       - Integers and floats: Converts `0` to `False` and non-zero values to `True`.
       - Strings: Converts an empty string `''` to `False` and non-empty strings to `True`.
-      - None: Converts None to `False`.
+      - `None`: Converts `None` to `False`.
     ```python
-        # Converting from integer to boolean
-        num_int = 0
-        is_valid = bool(num_int)  # False
+    # Converting from integer to boolean
+    num_int = 0
+    is_valid = bool(num_int)  # False
 
-        # Converting from string to boolean
-        str_value = "True"
-        bool_value = bool(str_value)  # True (non-empty string is True)
+    # Converting from string to boolean
+    str_value = "True"
+    bool_value = bool(str_value)  # True (non-empty string is True)
 
-        # Converting from float to boolean
-        num_float = 3.14
-        is_valid = bool(num_float)  # True (non-zero float is True)
+    # Converting from float to boolean
+    num_float = 3.14
+    is_valid = bool(num_float)  # True (non-zero float is True)
 
     ```
   # Arithmetic And Operations
@@ -252,9 +252,9 @@ print("Hello, World!")
        - Can also concatenate strings.
        ```python
        # Numbers
-        result = 5 + 3  # 8
-        # Strings
-        result = "Hello, " + "world!"  # "Hello, world!"
+       result = 5 + 3  # 8
+       # Strings
+       result = "Hello, " + "world!"  # "Hello, world!"
        ``` 
     - 2. Subtraction (`-`)
        - Subtracts the second number from the first. 
