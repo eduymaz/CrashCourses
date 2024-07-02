@@ -117,7 +117,8 @@ print("Hello, World!")
     Special Characters: 
     ```python
     print('One \nTwo \nThree')# use \n to create a new line
-    print("\t hey \t there") #we can create a tab using \t: 
+    print("\t hey \t there") #we can create a tab using \t
+    print("Newline is \"") # we can use `\` to escape illegal characters in the string
     ```
 
 
@@ -217,14 +218,14 @@ print("Hello, World!")
     ```
   - `float()` for floats:
     ```python
-        num = 42
-        num_str = str(num)  # Converts integer 42 to string '42'
+    # Converting from integer to float
+    num_int = 42
+    num_float = float(num_int)  # 42.0
 
-        pi = 3.14
-        pi_str = str(pi)  # Converts float 3.14 to string '3.14'
+    # Converting from string to float
+    num_str = "3.14"
+    num_float = float(num_str)  # 3.14
 
-        is_active = True
-        is_active_str = str(is_active)  # Converts boolean True to string 'True'
     ```
   - `bool()` for boolean:
       - Integers and floats: Converts `0` to `False` and non-zero values to `True`.
