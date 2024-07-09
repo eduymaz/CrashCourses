@@ -1,0 +1,8 @@
+[2024-07-09 12:00:01] INFO: User login successful for user: jdoe
+[2024-07-09 12:05:43] ERROR: Failed login attempt for user: asmith
+[2024-07-09 12:10:21] INFO: User login successful for user: mjane
+[2024-07-09 12:15:55] WARNING: Disk space running low on /dev/sda1
+[2024-07-09 12:20:33] INFO: User login successful for user: jdoe
+[2024-07-09 12:25:47] ERROR: Failed login attempt for user: jdoe
+[2024-07-09 12:30:18] INFO: User logout successful for user: jdoe
+
