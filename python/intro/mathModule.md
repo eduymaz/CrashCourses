@@ -68,3 +68,44 @@ import math
 print(math.pow(2, 3))  # Output: 8.0
 print(math.sqrt(16))   # Output: 4.0
 ```
+## Factorial and Combination Functions
+
+- `math.factorial(x)`: Returns the factorial of x.
+- `math.comb(n, k)`: Returns the number of ways to choose k items from n items without repetition and without order.
+
+```python
+import math
+
+print(math.factorial(5))  # Output: 120
+print(math.comb(5, 2))    # Output: 10
+```
+## Hyperbolic Functions
+
+- `math.sinh(x)`: Returns the hyperbolic sine of x.
+- `math.cosh(x)`: Returns the hyperbolic cosine of x.
+- `math.tanh(x)`: Returns the hyperbolic tangent of x.
+
+```python
+import math
+
+print(math.sinh(0))  # Output: 0.0
+print(math.cosh(0))  # Output: 1.0
+print(math.tanh(0))  # Output: 0.0
+```
+## Additional Functions
+
+- `math.ceil(x)`: Returns the smallest integer greater than or equal to x.
+- `math.floor(x)`: Returns the largest integer less than or equal to x.
+- `math.fabs(x)`: Returns the absolute value of x.
+- `math.gcd(a, b)`: Returns the greatest common divisor of a and b.
+
+```python
+import math
+
+print(math.ceil(4.2))   # Output: 5
+print(math.floor(4.8))  # Output: 4
+print(math.fabs(-3.5))  # Output: 3.5
+print(math.gcd(54, 24)) # Output: 6
+```
+
+[Other methods within the math module](https://www.w3schools.com/python/module_math.asp)
