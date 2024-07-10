@@ -136,3 +136,5 @@ print(formatted_string)  # Output: Hello, Python. Version 3.9.
 formatted_string = f"Hello, {name}. Version {version}."
 print(formatted_string)  # Output: Hello, Python. Version 3.9.
 ```
+
+[Other methods regarding string Manipulation](https://www.w3schools.com/python/python_ref_string.asp)
